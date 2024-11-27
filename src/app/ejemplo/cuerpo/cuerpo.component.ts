@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+import { PadreComponent } from "../padre/padre.component";
 
 @Component({
   selector: 'app-cuerpo',
   standalone: true,
-  imports: [],
+  imports: [PadreComponent],
   templateUrl: './cuerpo.component.html',
   styleUrl: './cuerpo.component.css'
 })
