@@ -1,16 +1,7 @@
 .d-flex.justify-content-between.bg-primary {
     background-color: #a30dda !important;
   }
-
-img{
-    border-radius: 5px;
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-    width: 45%;
-    background-clip: content-box;
-}
-
-h1 {
+.text-center{
     text-shadow: 
       2px 2px 0 black,
       -2px -2px 0 black,

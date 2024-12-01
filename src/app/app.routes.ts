@@ -1,10 +1,16 @@
-import { Routes } from '@angular/router';
-import { CuerpoComponent } from './ejemplo/cuerpo/cuerpo.component';
-import { HeaderComponent } from './ejemplo/header/header.component';
-import { FooterComponent } from './ejemplo/footer/footer.component';
+import { RouterModule, Routes } from '@angular/router';
+import { IniciarsesionComponent } from './beji/iniciarsesion/iniciarsesion.component';
+import { PagPrincipalComponent } from './beji/pag-principal/pag-principal.component';
+import { NgModule } from '@angular/core';
+
 
 export const routes: Routes = [
-    {path:'',component:CuerpoComponent},
-    {path:'',component:HeaderComponent},
-    {path:'',component:FooterComponent}
+        { path: 'iniciarsesion', component: IniciarsesionComponent },
+        { path: 'pag-principal', component: PagPrincipalComponent },
 ];
+
+@NgModule({
+    imports: [RouterModule.forRoot(routes)],
+    exports: [RouterModule]
+  })
+  export class AppRoutingModule { }
